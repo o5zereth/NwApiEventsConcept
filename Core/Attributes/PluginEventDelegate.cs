@@ -5,14 +5,11 @@
 
     public sealed class PluginEventDelegate : Attribute
     {
-        public PluginEventDelegate(ServerEventType eventType, Type eventArgsType = null)
+        public PluginEventDelegate(ServerEventType eventType)
         {
             ServerEvent = eventType;
-            EventArgs = eventArgsType;
         }
 
         public ServerEventType ServerEvent { get; }
-
-        public Type EventArgs { get; }
     }
 }

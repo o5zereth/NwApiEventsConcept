@@ -211,6 +211,10 @@
                 }
             }
 
+            if (cancelled)
+            {
+                Console.WriteLine($"> {args.BaseType} event was cancelled\n");
+            }
             return cancellation;
         }
     }

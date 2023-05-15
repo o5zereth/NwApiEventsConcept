@@ -9,7 +9,7 @@
     public static class Map
     {
         // attribute to identify events
-        [PluginEventDelegate(ServerEventType.MapGenerated, typeof(MapGeneratedArgs))]
+        [PluginEventDelegate(ServerEventType.MapGenerated)]
         internal static Action<MapGeneratedArgs> mapGenerated;
 
 

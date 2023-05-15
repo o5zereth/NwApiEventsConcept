@@ -9,7 +9,7 @@
     public static class Server
     {
         // attribute to identify events
-        [PluginEventDelegate(ServerEventType.RoundEndConditionsCheck, typeof(RoundEndConditionsCheckArgs))]
+        [PluginEventDelegate(ServerEventType.RoundEndConditionsCheck)]
         // make it readonly to prevent assignment
         internal static readonly MultiReturnEvent roundEndConditionsCheck
             = new MultiReturnEvent(
