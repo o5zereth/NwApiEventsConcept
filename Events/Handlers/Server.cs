@@ -13,7 +13,7 @@
         // make it readonly to prevent assignment
         internal static readonly MultiReturnEvent roundEndConditionsCheck
             = new MultiReturnEvent(
-                // required parameter type (can be null)
+                // required parameter type (cannot be null)
                 typeof(RoundEndConditionsCheckArgs),
 
                 // allowed return types
